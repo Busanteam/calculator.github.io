@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .calculator {
+    width: 340px;
+    height: 550px;
+    background-color: #fdcb6e;
+    box-shadow: inset 0 0 10px #b86e00;
+    color: white;
+    font-weight: bold;
+    font-size: 2.1rem;
+    border-radius: 20px 20px;
+}
+
+.container .calculator .displayBoard {
+    position: relative;
+    height: 150px;
+}
+
+.container .calculator .displayBoard .result {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 30px 5px 0;
+}
+
+.container .calculator .numberBoard {
+    width: 100%;
+    height: 400px;
+}
+
+.container .calculator .numberBoard .row {
+    display: flex;
+    flex-flow: wrap;
+    height: 80px;
+}
+
+.container .calculator .numberBoard .row .btn {
+    cursor: pointer;
+}
+
+.container .calculator .numberBoard .row .col {
+    flex-basis: 25%;
+    cursor: pointer;
+}
+
+.col > .inner, .col2 > .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #444;
+    height: 78px;
+    box-shadow: inset 4px 2px 2px #e24a3c52;
+}
+
+.col > .inner :hover, .col2 > .inner :hover{
+    background-color: rgba(240, 255, 255, 0.35);
+}
+
+.container .calculator .numberBoard .row .col2 {
+    flex-basis: 50%;
+    cursor: pointer;
+}
+
+.container .calculator .numberBoard .subBtn {
+    background-color: #fd79a8;
+}
+
+.container .calculator .numberBoard .subBtn:active {
+    background-color: #e84393;
+}
+
+.container .calculator .numberBoard .numberBtn {
+    background-color: #ffae9c;
+}
+
+.container .calculator .numberBoard .numberBtn:active {
+    background-color: #e17055;
+}
+
+.container .calculator .numberBoard .operator {
+    background-color: #ff7675;
+}
+
+.container .calculator .numberBoard .operator:active {
+    background-color: #d63031;
+}

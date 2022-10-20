@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./main_css.css"> 
+    <title>My Calculator</title> 
+</head> 
+<body> 
+    <div class="container"> 
+        <div class="calculator"> 
+            <div class="displayBoard"> 
+                <div class="result"> 0 </div> 
+            </div> 
+            <div class="numberBoard"> 
+                <div class="row"> 
+                    <div class="col subBtn" onClick="handleCalculator(event)">
+                        <div class="inner">C</div>
+                    </div> 
+                    <div class="col subBtn" onClick="handleCalculator(event)">
+                        <div class="inner">±</div>
+                    </div> 
+                    <div class="col subBtn" onClick="handleCalculator(event)">
+                        <div class="inner">%</div>
+                    </div> 
+                    <div class="col operator" onClick="handleCalculator(event)">
+                        <div class="inner">÷</div>
+                    </div> 
+                </div> 
+                <div class="row"> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">7</div>
+                    </div> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">8</div>
+                    </div> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">9</div>
+                    </div> 
+                    <div class="col operator" onClick="handleCalculator(event)">
+                        <div class="inner">×</div>
+                    </div> 
+                </div> 
+                <div class="row"> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">4</div>
+                    </div> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">5</div>
+                    </div> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">6</div>
+                    </div> 
+                    <div class="col operator" onClick="handleCalculator(event)">
+                        <div class="inner">-</div>
+                    </div> 
+                </div> 
+                <div class="row"> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">1</div>
+                    </div> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">2</div>
+                    </div> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">3</div>
+                    </div> 
+                    <div class="col operator" onClick="handleCalculator(event)">
+                        <div class="inner">+</div>
+                    </div> 
+                </div> 
+                <div class="row"> 
+                    <div class="col2 numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">0</div>
+                    </div> 
+                    <div class="col numberBtn" onClick="handleCalculator(event)">
+                        <div class="inner">.</div>
+                    </div> 
+                    <div class="col operator" onClick="handleCalculator(event)">
+                        <div class="inner">=</div>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <script src="./main_js.js"></script> 
+</body> 
+<style>  
+    @media (prefers-color-scheme: dark) {
+      html, body {
+        background-color: rgb(46, 46, 46);
+        color: white;
+      }
+    }
+  
+    @media (prefers-color-scheme: light) {
+      html, body {
+        background-color: rgb(225, 225, 225);
+        color: black;
+      }
+    }
+</style>
+</html>
