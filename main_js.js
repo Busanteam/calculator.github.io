@@ -76,7 +76,7 @@ const divide = (x, y) => {
   } 
   if (zeroDivisionFlag=true) {
       console.log("0으로 나누는 식이 있습니다.");
-      // Infinity 가 출력 되어서 0이 출력 되도록 초기화(C 버튼)로 변경
+      // 0으로 나누면 Infinity 가 출력 되어서 콘솔창에 알림이 뜨고 0이 출력 되도록 초기화(C 버튼)로 변경
       ACEvent();
   }
 };
